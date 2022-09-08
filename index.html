@@ -10,8 +10,56 @@
   <body>
     <div class="container">
       <div class="form-box">
+        <h1>Welcome</h1>
         <form>
+          <div class="form-row">
+            <div class="form-col m-top">
+              <label for="username">Username</label>
+            </div>
+            <div class="form-col m-top">
+              <input type="text" name="username" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col m-top">
+              <label for="password">Password</label>
+            </div>
+            <div class="form-col m-top">
+              <input type="password" name="password" />
+            </div>
+            <div class="form-col m-top" id="pass-msg">
+              <p>{%PASSWORD_ERROR_MSG%}</p>
+            </div>
+          </div>
+          <div class="form-row m-top">
+            <div class="form-col m-top">
+              <button type="submit" class="form-btn">Login</button>
+            </div>
+          </div>
+          <div class="form-row m-top d-flex d-justify-space">
+            <span class="form-nav"><a href="#">Forgot Password?</a></span>
+            <span class="form-nav"><a href="#">Create an account</a></span>
+          </div>
         </form>
+        <div class="login-social m-top">
+          <div class="d-flex d-justify-center">
+            <div class="or m-top d-flex d-justify-center">OR</div>
+          </div>
+          <div class="links d-flex m-top">
+            <a href="#" title="Facebook">
+              <img src="./img/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="#" title="Twitter">
+              <img src="./img/twitter.svg" alt="Twitter" />
+            </a>
+            <a href="#" title="Github">
+              <img src="./img/github.svg" alt="Github" />
+            </a>
+            <a href="#" title="Google">
+              <img src="./img/google.svg" alt="Google" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
